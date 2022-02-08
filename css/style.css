@@ -209,4 +209,8 @@ font-family: roboto, sans-serif;
     text-transform: none;
     letter-spacing: 0.03em;
 }
-
+.ccontainer{
+    width: 1200px;
+    margin: 0 auto;
+   
+}
