@@ -8,14 +8,66 @@
    --background-button-member: #F5F4FA;
    --primary-color-white: #FFFFFF;
    --color-box-button: #188CEB;
-   
+}
+h1,
+h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 body{
 font-family: roboto, sans-serif;
 }
 .list {
     list-style: none;
+    /* обнуление что бы не было пробития после списка*/
+    padding: 0;
+    margin: 0;
 }
+.container {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+   /*outline: 2px solid red;
+    background-color: coral;*/
+   
+}
+/*header позиционирование*/
+.navigation,
+ .site-nav,
+.contact-list{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+margin: 0;
+padding: 0;
+margin-left: 90px;
+}
+.contact-list{
+    margin-left: auto;
+    padding: 0;
+}
+.contact-item {
+    padding-left: 50px;
+}
+.list-item {
+    padding-left: 50px;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+}
+.list-item a{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
 
 /* LOGO*/
 .site-logo {
@@ -27,11 +79,17 @@ font-family: roboto, sans-serif;
     text-decoration: none;
     text-transform: none;
     letter-spacing: 0.03em; 
+    
 }
 .site-color{
     color: var(--color-logo);
 }
 /* NAV*/
+
+
+
+
+
 .link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -40,6 +98,7 @@ font-family: roboto, sans-serif;
     text-decoration: none;
     text-transform: none;
     letter-spacing: 0.02em;
+    
 }
 .link:hover,
 .link:focus {
@@ -49,7 +108,7 @@ font-family: roboto, sans-serif;
     color: var(--accent-color);
 }
 
-.contact {
+.contact-link {
    color: var(--primary-text-color);
    font-weight: 500;
    font-size: 14px;
@@ -58,14 +117,18 @@ font-family: roboto, sans-serif;
    text-transform: none;
    letter-spacing: 0.02em;
 }
-.contact:hover,
-.contact:focus {
+.contact-link:hover,
+.contact-link:focus {
    color: var(--accent-color);
 }
 
 .box {
-    background-color: var(--color-background)
+    background-color: var(--color-background);
+    text-align: center; 
+    width: 1600px;
+    height: 600px;
 }
+
 .box-title{
     color: var(--primary-color-white);
     font-weight: 900;
@@ -74,6 +137,7 @@ font-family: roboto, sans-serif;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    
 }
 .box-button{
     color: var(--primary-color-white);
@@ -209,8 +273,4 @@ font-family: roboto, sans-serif;
     text-transform: none;
     letter-spacing: 0.03em;
 }
-.ccontainer{
-    width: 1200px;
-    margin: 0 auto;
-   
-}
+
