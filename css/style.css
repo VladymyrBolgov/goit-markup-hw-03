@@ -30,8 +30,8 @@ p {
     padding: 0 15px;
     margin: 0 auto;
 
-    outline: 2px solid red;
-    background-color: rgba(99, 76, 67, 0.449); 
+   /*outline: 2px solid red;
+    background-color: coral;*/
 }
 body {
     font-family: roboto, sans-serif;
@@ -93,11 +93,10 @@ img {
    margin-left: auto;
 }
 .nav-item a{
-    display: flex;
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
 .link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -107,16 +106,13 @@ img {
     text-transform: none;
     letter-spacing: 0.02em;
 }
-
 .link:hover,
 .link:focus {
     color: var(--accent-color);
 }
-
 .nav-list .link.current {
     color: var(--accent-color);
 }
-
 .contact-link {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -126,19 +122,27 @@ img {
     text-transform: none;
     letter-spacing: 0.02em;
 }
-
 .contact-link:hover,
 .contact-link:focus {
     color: var(--accent-color);
 }
 
-/*----------*/
+/*----BOX ------*/
 
 .box {
-    background-color: var(--color-background)
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
 
+    background-color: var(--color-background);
+}
 .box-title {
+    width: 696px;
+    margin-bottom: 30px;
+
     color: var(--primary-color-white);
     font-weight: 900;
     font-size: 44px;
@@ -146,11 +150,14 @@ img {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-}
-
+}    
 .box-button {
+     display: flex;
+
     color: var(--primary-color-white);
     background-color: var(--accent-color);
+    font-family: Roboto,
+    sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -160,11 +167,13 @@ img {
     border: 0px;
     border-radius: 3px;
 }
-
 .box-button:hover,
 .box-button:focus {
     background-color: var(--color-box-button);
 }
+
+
+/* ПРЕТМУЩЕСТВА*/
 
 .benefits-title {
     color: var(--title-text-color);
@@ -174,7 +183,6 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
-
 .benefits-text {
     color: var(--primary-text-color);
     font-size: 14px;
@@ -182,17 +190,43 @@ img {
     text-transform: none;
     letter-spacing: 0.03em;
 }
-
-.member {
-    background-color: var(--background-button-member);
+.benefits-list{
+    display: flex;
+}
+.benefits-list .benefits-item+.benefits-item {
+    margin-left: 30px;
+}
+.benefits.section {
+    padding-top: 94px;
 }
 
-.cards {
-    background-color: var(--primary-color-white);
+/* Чем мы занимаемся----------*/
+
+.directions-title{
+     color: var(--title-text-color);
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.17;
+     text-align: center;
+     text-transform: none;
+     letter-spacing: 0.03em;
+}
+.directions-list{
+    display: flex;
+    padding-top: 50px;
+}
+.directions-item+.directions-item{
+    margin-left: 30px;
+}
+.directions.section{
+    padding-top: 94px;
 }
 
-.directions-title,
-.member-title {
+/*Наша команда----------------*/
+
+.team-title {
+    padding-top: 94px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -201,8 +235,23 @@ img {
     text-transform: none;
     letter-spacing: 0.03em;
 }
+.team {
+    background-color: var(--background-button-member);
 
-.member-name {
+    /*outline: 2px solid red;
+    background-color: coral;*/
+}
+.team-item {
+    background-color: var(--primary-color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-item+.team-item{
+    margin-left: 30px;
+}
+.team-name {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -211,8 +260,9 @@ img {
     text-transform: none;
     letter-spacing: 0.03em;
 }
+.team-position {
+    margin-top: 10px;
 
-.member-position {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.17;
@@ -220,7 +270,14 @@ img {
     text-transform: none;
     letter-spacing: 0.03em;
 }
-
+.team-list{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 94px;
+}
+.team-item-text-container{
+    margin: 30px 0;
+}
 /*footer*/
 .footer {
     background-color: var(--color-background);
