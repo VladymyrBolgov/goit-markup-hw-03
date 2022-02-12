@@ -327,41 +327,66 @@ img {
 
 
 
-/* портфолио*/
+/* Портфолио---------*/
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+}
+.projects.section {
+    padding-top: 94px;
+
+    /*outline: 2px solid red;
+    background-color: coral;*/
+}
+.filter-list-item+.filter-list-item {
+    margin-left: 8px;
+}
 .filter-button {
+
+    margin: 0 auto;
+    border-radius: 4px ;
+    padding: 6px 22px;
+    
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s;
+
+    font-family: Roboto,sans-serif;
     color: var(--title-text-color);
     background-color: var(--background-button-member);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
+    letter-spacing: 0.03em;
     text-align: center;
     cursor: pointer;
     text-transform: none;
-    letter-spacing: 0.03em;
     font-family: inherit;
-    border: none;
+    border: transparent;
 }
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--accent-color);
     color: var(--primary-color-white);
 }
+
+
 .projects-list-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    text-transform: none;
     letter-spacing: 0.06em;
-     text-decoration: none;
-    
+    text-transform: none;
+    text-decoration: none;
 }
 .projects-list-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
-    text-transform: none;
     letter-spacing: 0.03em;
+    text-transform: none;
 }
 .projects-link{
      text-transform: none;
