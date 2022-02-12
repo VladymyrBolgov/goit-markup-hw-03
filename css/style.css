@@ -281,8 +281,18 @@ img {
 /*footer*/
 .footer {
     background-color: var(--color-background);
+    padding: 60px 0;
 }
-
+.address{
+    margin-top: 20px;
+}
+.address-list{
+    display: flex;
+    flex-direction: column;
+} 
+.address-item+.address-item{
+    margin-top: 9px;
+}
 .footer-logo {
     color: var(--accent-color);
     font-family: Raleway;
@@ -293,11 +303,9 @@ img {
     text-transform: none;
     letter-spacing: 0.03em;
 }
-
 .footer-color {
     color: var(--primary-color-white);
 }
-
 .footer-address {
     color: var(--primary-color-white);
     font-style: normal;
@@ -307,7 +315,6 @@ img {
     text-transform: none;
     letter-spacing: 0.03em;
 }
-
 .footer-link {
     color: var(--color-footer-contact);
     font-style: normal;
@@ -317,6 +324,7 @@ img {
     text-transform: none;
     letter-spacing: 0.03em;
 }
+
 
 /* портфолио*/
 .filter-button {
