@@ -335,15 +335,15 @@ img {
 }
 .projects.section {
     padding-top: 94px;
+    padding-bottom: 94px;
 
-    /*outline: 2px solid red;
+     /*outline: 2px solid red;
     background-color: coral;*/
 }
 .filter-list-item+.filter-list-item {
     margin-left: 8px;
 }
 .filter-button {
-
     margin: 0 auto;
     border-radius: 4px ;
     padding: 6px 22px;
@@ -371,6 +371,19 @@ img {
     color: var(--primary-color-white);
 }
 
+/*projects-list*/
+
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+}
+.projects-list-item{
+    margin: 15px;
+}
 
 .projects-list-title {
     color: var(--title-text-color);
@@ -392,3 +405,10 @@ img {
      text-transform: none;
      text-decoration: none;
 }
+.projects-title-text-container{
+   padding: 20px 24px; 
+   border-right: 1px solid #ececec;
+   border-bottom: 1px solid #ececec;
+   border-left: 1px solid #ececec;
+}
+
