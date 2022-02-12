@@ -326,6 +326,7 @@ img {
 }
 
 
+
 /* портфолио*/
 .filter-button {
     color: var(--title-text-color);
@@ -340,26 +341,29 @@ img {
     font-family: inherit;
     border: none;
 }
-
 .filter-button:hover,
-.filters-button:focus {
+.filter-button:focus {
     background-color: var(--accent-color);
     color: var(--primary-color-white);
 }
-
-.presentation-subject {
+.projects-list-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     text-transform: none;
     letter-spacing: 0.06em;
+     text-decoration: none;
+    
 }
-
-.presentation-direction {
+.projects-list-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
     text-transform: none;
     letter-spacing: 0.03em;
+}
+.projects-link{
+     text-transform: none;
+     text-decoration: none;
 }
