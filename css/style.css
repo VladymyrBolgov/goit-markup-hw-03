@@ -34,7 +34,7 @@ body {
     font-family: roboto, sans-serif;
 }
 
-.list {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -182,6 +182,7 @@ img {
     line-height: 1.17;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 .benefits-text {
     color: var(--primary-text-color);
@@ -196,8 +197,9 @@ img {
 .benefits-list .benefits-item+.benefits-item {
     margin-left: 30px;
 }
-.benefits.section {
+.section {
     padding-top: 94px;
+    padding-bottom: 94px; 
 }
 
 /* Чем мы занимаемся----------*/
@@ -224,9 +226,9 @@ img {
 
 /*Наша команда----------------*/
 
-.team.section{
+/*.team.section{
     padding-top: 94px;
-}
+}*/
 .team-title {
     
     color: var(--title-text-color);
@@ -275,10 +277,10 @@ img {
 .team-list{
     display: flex;
     margin-top: 50px;
-    padding-bottom: 94px;
+   
 }
 .team-item-text-container{
-    margin: 30px 0;
+    padding: 30px 0;
 }
 /*footer*/
 
@@ -335,8 +337,10 @@ img {
 .filter-list{
     display: flex;
     justify-content: center;
+
+    margin-bottom: 50px;
 }
-.projects.section {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -379,7 +383,7 @@ img {
 .projects-list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 64px;
+    margin-top: -15px;
     margin-right: -15px;
     margin-bottom: -15px;
     margin-left: -15px;
@@ -397,6 +401,8 @@ img {
     letter-spacing: 0.06em;
     text-transform: none;
     text-decoration: none;
+
+    margin-bottom: 4px;
 }
 .projects-list-text {
     color: var(--primary-text-color);
