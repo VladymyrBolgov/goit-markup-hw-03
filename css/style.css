@@ -221,16 +221,16 @@ img {
     margin-left: 30px;
 }
 .directions.section{
-    padding-top: 94px;
+    padding-top: 0; 
+    padding-bottom: 0;
 }
 
 /*Наша команда----------------*/
 
 /*.team.section{
-    padding-top: 94px;
+    padding-top: 0;
 }*/
 .team-title {
-    
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
