@@ -164,6 +164,8 @@ img {
     letter-spacing: 0.06em;
     border: 0px;
     border-radius: 3px;
+
+    padding: 10px 32px;
 }
 .box-button:hover,
 .box-button:focus {
