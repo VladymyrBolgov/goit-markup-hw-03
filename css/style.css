@@ -221,8 +221,11 @@ img {
 
 /*Наша команда----------------*/
 
-.team-title {
+.team.section{
     padding-top: 94px;
+}
+.team-title {
+    
 
     color: var(--title-text-color);
     font-weight: 700;
