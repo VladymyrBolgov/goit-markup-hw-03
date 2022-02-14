@@ -382,16 +382,13 @@ img {
 .projects-list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: -15px;
-    margin-right: -15px;
-    margin-bottom: -15px;
-    margin-left: -15px;
+    margin: -15px;
+    
 }
 .projects-list-item{
     margin: 15px;
     flex-basis: calc((100% - 90px) / 3);
 }
-
 .projects-list-title {
     color: var(--title-text-color);
     font-weight: 700;
