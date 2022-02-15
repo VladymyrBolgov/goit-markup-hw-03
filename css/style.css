@@ -138,7 +138,7 @@ img {
 
     background-color: var(--color-background);
     
-x
+
 }
 .box-title {
     width: 696px;
@@ -203,6 +203,17 @@ x
 .section {
     padding-top: 94px;
     padding-bottom: 94px; 
+}
+/* скрытый заголовок*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
 /* Чем мы занимаемся----------*/
